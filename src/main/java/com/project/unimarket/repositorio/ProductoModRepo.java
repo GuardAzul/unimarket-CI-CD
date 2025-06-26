@@ -1,0 +1,14 @@
+package com.project.unimarket.repositorio;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.project.unimarket.modelo.entidades.ProductoModerador;
+
+@Repository
+public interface ProductoModRepo extends JpaRepository<ProductoModerador, Integer> {
+    
+    // Aquí puedes agregar métodos personalizados si es necesario
+    // Por ejemplo, para buscar por moderador o producto, etc.
+    
+}
